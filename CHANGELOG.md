@@ -30,13 +30,15 @@ at anytime.
   * Detect a UPnP redirect that didn't get cleaned up on a previous run and use it
   * Bumped jsonschema requirement to 2.6.0
   * Refactor some assert statements to accommodate the PYTHONOPTIMIZE flag set for Android.
-  
+  * Moved BLOB_SIZE from conf.py to MAX_BLOB_SIZE in blob/blob_file.py
+  *
+
 ### Added
   * Added `wallet_prefill_addresses` command, which distributes credits to multiple addresses
   *
 
 ### Removed
-  *
+  * Removed some alternate methods of reading from blob files*
   *
 
 
