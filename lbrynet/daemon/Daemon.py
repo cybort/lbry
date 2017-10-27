@@ -2515,7 +2515,7 @@ class Daemon(AuthJSONRPCServer):
 
         timeout = timeout or conf.settings['peer_search_timeout']
 
-        d = self.session.peer_finder.find_peers_for_blob(blob_hash, timeout=timeout)
+        d = self.session.peer_finder.find_peers_for_blob(blob_hash, timeout=timeout, filter_self=True)
         d.addCallback(lambda r: [[c.host, c.port, c.is_available()] for c in r])
         d.addCallback(lambda r: self._render_response(r))
         return d
