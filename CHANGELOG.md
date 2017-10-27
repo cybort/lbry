@@ -13,7 +13,7 @@ at anytime.
   *
 
 ### Fixed
-  *
+  * Fixed local node ID reporting in peer list*
   *
 
 ### Deprecated
